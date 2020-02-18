@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    background-color: #ffcc00;
+    font-family: 'Shadows Into Light', cursive;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#container-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+
+#card-edit {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 30vw;
+    height: 20vh;
+    z-index: 15;
+    background-color: #5990bd;
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+}
+
+#trello-board {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#trello-list-container {
+    display: flex;
+    overflow-x: scroll;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#trello-list-container .trello-list {
+    display: flex;
+    flex : 0 0 300px;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.1);
+    min-height: 200px;
+    padding:5px;
+    margin: 10px;
+}
+
+.trello-list-title {
+    background-color: #e4e4b1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.newitem-title-wrapper {
+    background-color: #e4e4b1;
+    padding: 10px;
+    text-align: center;
+}
+#trello-list-title-input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    float: right;
+}
+

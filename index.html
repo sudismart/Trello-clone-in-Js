@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tello Board</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Trello</h1>
+        </header>
+        <div id="container"></div>
+        <div id="container-overlay"></div>
+        <div id="card-edit">
+            <div id="card-edit-close"><span>&#10006;</span></div>
+            <form>
+                <div id="card-edit-inputs">
+                    <label for="card-edit-title">Card Name</label>
+                    <input id="card-edit-title" type="text" name="card-edit-title">
+                </div>
+
+                <div>
+                    <input id="card-edit-delete" type="button" value="Delete">
+                    <input id="card-edit-submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <!-- external js files -->
+        <script type="text/javascript" src="js/card-delete.js"></script>
+        <script type="text/javascript" src="js/card-edit.js"></script>
+        <script type="text/javascript" src="js/card-title-form.js"></script>
+        <script type="text/javascript" src="js/add-card.js"></script>
+        <script type="text/javascript" src="js/add-card.js"></script>
+        <script type="text/javascript" src="js/card.js"></script>
+        <script type="text/javascript" src="js/add-list.js"></script>
+        <script type="text/javascript" src="js/list-title-form.js"></script>
+        <script type="text/javascript" src="js/list.js"></script>
+        <script type="text/javascript" src="js/trello-main.js"></script>
+    </body>
+</html>
